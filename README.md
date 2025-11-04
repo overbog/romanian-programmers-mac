@@ -50,7 +50,21 @@ Modul Accountants se generează din layout-ul Programmers, păstrând toate map�
  **Atenție!**
 
 * la instalare trebuie activat din:
-    * _System Preferences > Language & Text > Input Sources > Romanian - Programmers_ (OS X 10.8).
-    * _System Preferences > Keyboard > Input Sources > [+] > Others > Romanian - Programmers_ (OS X/macOS 10.9+).
+  * _System Preferences > Language & Text > Input Sources > Romanian - Programmers_ (OS X 10.8).
+  * _System Preferences > Keyboard > Input Sources > [+] > Others > Romanian - Programmers_ (OS X/macOS 10.9+).
 * la actualizare este nevoie de un logout + login pentru ca schimbările să fie vizibile. În cazul lui OS X/macOS 10.9+, s-ar putea să fie nevoie de reactivare dacă se execută o actualizare.
 * scriptul de instalare invocă sudo pentru a putea executa acțiunie dorite. Dacă securitatea este o problemă, este recomandată clonarea acestui depozit, urmată de o instalare manuală, sau de o instalare locală (`./install.sh local`) după ce scriptul de instalare este inspectat.
+
+## Dezinstalare
+
+```bash
+curl --silent --location --max-redirs 10 https://raw.githubusercontent.com/overbog/romanian-programmers-mac/feature/accountants-variant/uninstall.sh --output "/tmp/rpm-uninstall.sh" && bash "/tmp/rpm-uninstall.sh" && rm -f "/tmp/rpm-uninstall.sh"
+```
+
+Sau local din depozitul clonat:
+
+```bash
+./uninstall.sh
+```
+
+Dezinstalarea șterge toate layout-urile Romanian (Programmers, Accountants și versiuni vechi), curăță cache-urile și necesită logout + login.
