@@ -39,16 +39,18 @@ La rulare vei fi întrebat:
 * Tipul de aranjament:
     * 1 = Romanian - Programmers (original)
     * 2 = Romanian - Accountants (derivat – taste identice cu Programmers, dar tasta numerică de punct devine virgulă)
+    * 3 = Ambele (instalează simultan ambele variante)
 * Varianta aranjamentului hardware: 1 sau 2 (poziția tastei înainte de 1)
 
 Modul Accountants se generează din layout-ul Programmers, păstrând toate mapările, cu o singură diferență:
+**Poți instala ambele layout-uri simultan, selectând opțiunea 3 la promptul de instalare.**
 
 * keypad decimal (cod 65) se schimbă din „.” în „,”; numele devine „Romanian - Accountants”, iar id-ul devine -5320.
 
  **Atenție!**
 
- * la instalare trebuie activat din:
-     * _System Preferences > Language & Text > Input Sources > Romanian - Programmers_ (OS X 10.8).
-     * _System Preferences > Keyboard > Input Sources > [+] > Others > Romanian - Programmers_ (OS X/macOS 10.9+).
- * la actualizare este nevoie de un logout + login pentru ca schimbările să fie vizibile. În cazul lui OS X/macOS 10.9+, s-ar putea să fie nevoie de reactivare dacă se execută o actualizare.
- * scriptul de instalare invocă sudo pentru a putea executa acțiunie dorite. Dacă securitatea este o problemă, este recomandată clonarea acestui depozit, urmată de o instalare manuală, sau de o instalare locală (`./install.sh local`) după ce scriptul de instalare este inspectat.
+* la instalare trebuie activat din:
+    * _System Preferences > Language & Text > Input Sources > Romanian - Programmers_ (OS X 10.8).
+    * _System Preferences > Keyboard > Input Sources > [+] > Others > Romanian - Programmers_ (OS X/macOS 10.9+).
+* la actualizare este nevoie de un logout + login pentru ca schimbările să fie vizibile. În cazul lui OS X/macOS 10.9+, s-ar putea să fie nevoie de reactivare dacă se execută o actualizare.
+* scriptul de instalare invocă sudo pentru a putea executa acțiunie dorite. Dacă securitatea este o problemă, este recomandată clonarea acestui depozit, urmată de o instalare manuală, sau de o instalare locală (`./install.sh local`) după ce scriptul de instalare este inspectat.
