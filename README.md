@@ -1,3 +1,26 @@
+
+# Versiunea actuală (fork overbog)
+
+## Motivație și modificări
+
+Acest fork extinde proiectul original pentru a acoperi nevoile utilizatorilor care doresc:
+
+- Instalare rapidă și sigură a layout-urilor Romanian - Programmers și Romanian - Accountants
+- Opțiunea de a instala ambele layout-uri simultan (pentru comutare rapidă)
+- Detecție automată a variantei hardware (tasta din stânga lui 1)
+- Script dedicat pentru dezinstalare (`uninstall.sh`) care curăță complet sistemul
+- Permisiuni corecte pentru fișierele instalate, astfel încât icon-urile să apară corect
+- Documentație actualizată și instrucțiuni clare pentru instalare/dezinstalare
+
+Modificările principale față de upstream:
+- Adăugat opțiunea 3 la instalare: ambele layout-uri
+- Detecție automată a tastaturii fizice
+- Permisiuni corecte pentru .keylayout și .icns
+- Script separat pentru dezinstalare
+- README.md actualizat cu toate opțiunile și pașii
+
+---
+
 ## Despre
 
 Aranjament de tastatură "Romanian - Programmers" pentru Mac OS X / macOS. Proiect implementat folosind [Ukelele](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=ukelele) conform [SR 13392:2004](http://www.secarica.ro/kbdro_help_romanian_standard_ro.pdf).
